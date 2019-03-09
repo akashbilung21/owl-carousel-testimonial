@@ -1,0 +1,27 @@
+body{
+    background-color: #eeeeff;
+}
+
+.testimonial{
+    background-color: #ffffff;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    box-shadow: 5px 6px 18px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+    padding: 20px 30px;
+}
+.testimonial > p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.testimonial-bottom{
+    display: flex;
+    align-items: center;
+}
+.testimonial-bottom > .testimonial-avatar > img{
+    max-width: 80px;
+}
+
+.testimonial-avatar{
+    margin-right: 20px;
+}

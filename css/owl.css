@@ -1,0 +1,62 @@
+
+.owl-stage-outer {
+    position: relative;
+    z-index: 20;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 110%;
+    z-index: 2;
+}
+
+.owl-nav::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+@media only screen and (max-width: 37.5em) {
+    .owl-nav {
+        width: 100%;
+    }
+}
+
+.owl-nav .owl-prev span, .owl-nav .owl-next span {
+    font-size: 4rem;
+}
+
+.owl-nav .owl-prev {
+    float: left;
+}
+
+.owl-nav .owl-next {
+    float: right;
+}
+
+.owl-dots {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.owl-dot span {
+    width: 1rem;
+    height: 1rem;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    background: #222;
+    display: block;
+}
+
+.owl-dot.active span {
+    background: #f0433a;
+}
+
+.owl-dot:not(:last-child) {
+    margin-right: 1rem;
+}
